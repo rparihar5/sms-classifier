@@ -1,0 +1,5 @@
+[2025-11-23 18:39:21] src.predict - INFO - backend=pipeline, label=ham, spam_prob=0.0379, text='Are you coming to the party or not? Else I will leave.'
+[2025-11-23 18:39:35] src.predict - INFO - backend=nltk, label=ham, spam_prob=0.0095, text='Are you coming to the party or not? Else I will leave.'
+[2025-11-23 18:40:10] src.predict - INFO - backend=nltk, label=spam, spam_prob=0.5359, text='Congratulations! You won 1,000,000 USD 🎉'
+[2025-11-23 18:40:13] src.predict - INFO - backend=pipeline, label=ham, spam_prob=0.3450, text='Congratulations! You won 1,000,000 USD 🎉'
+[2025-11-23 18:40:22] src.predict - INFO - backend=nltk, label=spam, spam_prob=0.5359, text='Congratulations! You won 1,000,000 USD 🎉'
