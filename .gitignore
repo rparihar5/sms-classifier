@@ -1,0 +1,65 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dll
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Cache directories
+.cache/
+*.sqlite3
+*.log
+
+# -----------------------------
+# Streamlit
+# -----------------------------
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# -----------------------------
+# Logs
+# -----------------------------
+logs/*.log
+
+# -----------------------------
+# Models
+# (optional: uncomment if you don't want to track model files)
+# models/*.pkl
+# models/*.joblib
+# models/*metrics.json
+# -----------------------------
+
+# -----------------------------
+# OS junk files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# VS Code / IDE files
+# -----------------------------
+.vscode/
+.idea/
+
+# -----------------------------
+# Other hidden files
+# -----------------------------
+*.env
+.env.local
+.env.*.local
