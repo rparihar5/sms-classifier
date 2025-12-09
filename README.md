@@ -1,80 +1,98 @@
-📱 SMS Spam Classifier
+Here is a **clean, professional, well-organized `README.md`** suitable for **GitHub, recruiters, and production-level projects**. You can **copy-paste this directly** into your `README.md`.
 
-An end-to-end Machine Learning project for classifying SMS messages as Spam or Ham.
-Built with Python, Scikit-Learn, NLTK, Streamlit, and deployed on Streamlit Cloud.
+---
 
-🚀 Live Demo
+# 📱 SMS Spam Classifier
 
-🔗 App URL: [SMS-Spam-Classifier](https://sms-classifier-c7xhpszpnh23a8xf53drxz.streamlit.app/)
-Try with example SMS messages and switch between two ML backends!
+An **end-to-end Machine Learning project** for classifying SMS messages as **Spam** or **Ham**.
+Built with **Python, Scikit-Learn, NLTK, Streamlit**, and deployed on **Streamlit Community Cloud**.
 
-🧠 Project Overview
+---
 
-This project builds a complete end-to-end machine learning system:
+## 🚀 Live Demo
 
-Data preprocessing (tokenization, stopword removal, stemming)
+🔗 **App URL:**
+👉 [https://sms-classifier-c7xhpszpnh23a8xf53drxz.streamlit.app/](https://sms-classifier-c7xhpszpnh23a8xf53drxz.streamlit.app/)
 
-Feature engineering (TF-IDF vectorization)
+Try real SMS examples and **switch between two ML backends** in real time.
 
-Two machine learning backends:
+---
 
-NLTK + Naive Bayes
+## 🧠 Project Overview
 
-TF-IDF + Logistic Regression Pipeline
+This project implements a **production-quality ML pipeline**, not just a notebook.
 
-Unified prediction interface with confidence scores
+### What it covers end-to-end:
 
-Evaluation reports (accuracy, precision, recall, F1)
+* Text preprocessing (tokenization, stopword removal, stemming)
+* Feature engineering using **TF-IDF**
+* **Two Machine Learning models**
+* Unified prediction interface with **confidence scores**
+* Model evaluation & metrics persistence
+* Logging for training and predictions
+* Interactive **Streamlit web app**
+* Cloud deployment
 
-Logging system for training and prediction
+---
 
-Streamlit app for real-time SMS classification
+## 🎯 Features
 
-Deployment on Streamlit Community Cloud
+### ✅ Dual ML Backends
 
-It is structured as a production-quality ML project, not just a notebook.
+* **NLTK + Naive Bayes**
+* **TF-IDF + Logistic Regression (Pipeline)**
+  ✔ Switch models directly from the UI
 
-🎯 Features
-✔ Two ML Models
+---
 
-Naive Bayes (NLTK preprocessing)
+### ✅ Clean Text Preprocessing
 
-Logistic Regression (Pipeline TF-IDF)
-Easily switch between them in the UI.
+* Lowercasing
+* Tokenization
+* Punctuation removal
+* Stopword removal
+* Stemming
 
-✔ Clean text preprocessing
+---
 
-Lowercasing
+### ✅ Confidence Scores
 
-Tokenization
+Each prediction returns:
 
-Remove punctuation
+* **Spam / Ham**
+* **Probability score (0–1)**
 
-Stopword removal
+---
 
-Stemming
+### ✅ Logging System
 
-✔ Confidence Scores
+* Logs **every prediction**
+* Logs **training activity**
+* Stored under `logs/`
 
-Every prediction returns:
+---
 
-Spam or Ham
+### ✅ Metrics Persistence
 
-Probability (0–1)
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+  Saved as **JSON files** per model
 
-✔ Logs every prediction
+---
 
-Stored in logs/predictions.log
+### ✅ Streamlit Frontend
 
-✔ Metrics stored as JSON
+* Fast
+* Simple UI
+* Cloud-deployable
 
-Each model has its own metrics file.
+---
 
-✔ Streamlit Frontend
+## 📁 Project Structure
 
-User-friendly, fast, cloud-deployable.
-
-📁 Project Structure
+```
 sms-classifier/
 │
 ├── app/                          # Streamlit web application
@@ -91,171 +109,201 @@ sms-classifier/
 │
 ├── models/                       # Trained models & evaluation metrics
 │   ├── model.pkl                 # NLTK Naive Bayes model
-│   ├── vectorizer.pkl            # TF-IDF vectorizer for NLTK model
+│   ├── vectorizer.pkl            # TF-IDF vectorizer (NLTK model)
 │   ├── sms_model.joblib          # Logistic Regression Pipeline
 │   ├── nltk_metrics.json
 │   └── pipeline_metrics.json
 │
-├── src/                          # Source code (core ML pipeline)
+├── src/                          # Core ML source code
 │   ├── config.py                 # Global configuration
-│   ├── preprocess.py             # Text cleaning + stemming
+│   ├── preprocess.py             # Text preprocessing logic
 │   ├── predict.py                # Prediction + confidence + logging
-│   ├── train_nltk_model.py       # Train NLTK + Naive Bayes model
-│   ├── train_pipeline_model.py   # Train Pipeline LR model
+│   ├── train_nltk_model.py       # NLTK + Naive Bayes training
+│   ├── train_pipeline_model.py   # TF-IDF + LR pipeline training
 │   ├── utils/
-│   │    └── logger.py            # Custom logger
+│   │    └── logger.py             # Custom logging utility
 │   └── models/
-│        └── evaluate.py          # Evaluation metrics generator
+│        └── evaluate.py           # Evaluation metrics generator
 │
-├── venv/                         # Python virtual environment (optional)
-│
+├── venv/                         # Virtual environment (optional)
 └── requirements.txt              # Python dependencies
+```
 
-🛠️ Installation
+---
 
-Clone the repo:
+## 🛠️ Installation
 
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/rparihar5/sms-classifier.git
 cd sms-classifier
+```
 
+---
 
-Create and activate a virtual environment:
+### 2️⃣ Create & Activate Virtual Environment
 
+```bash
 python3 -m venv venv
-source venv/bin/activate    # macOS / Linux
-venv\Scripts\activate       # Windows
+source venv/bin/activate     # macOS / Linux
+venv\Scripts\activate        # Windows
+```
 
+---
 
-Install dependencies:
+### 3️⃣ Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-🧪 Training Models
-1. Train NLTK + Naive Bayes
+---
+
+## 🧪 Training the Models
+
+### 🔹 1. Train NLTK + Naive Bayes
+
+```bash
 python -m src.train_nltk_model
+```
 
+**Outputs:**
 
-Generates:
+* `models/model.pkl`
+* `models/vectorizer.pkl`
+* `models/nltk_metrics.json`
+* Logs → `logs/train_nltk_model.log`
 
-models/model.pkl
+---
 
-models/vectorizer.pkl
+### 🔹 2. Train TF-IDF + Logistic Regression Pipeline
 
-models/nltk_metrics.json
-
-logs → logs/train_nltk_model.log
-
-2. Train Pipeline (TF-IDF + Logistic Regression)
+```bash
 python -m src.train_pipeline_model
+```
 
+**Outputs:**
 
-Generates:
+* `models/sms_model.joblib`
+* `models/pipeline_metrics.json`
+* Logs → `logs/train_pipeline_model.log`
 
-models/sms_model.joblib
+---
 
-models/pipeline_metrics.json
+## 🔍 Run the App Locally
 
-logs → logs/train_pipeline_model.log
-
-🔍 Running the App Locally
+```bash
 streamlit run app/app.py
+```
 
+Open in browser:
 
-App opens at:
-
+```
 http://localhost:8501
+```
 
-🌐 Deployment (Streamlit Cloud)
+---
+
+## 🌐 Deployment (Streamlit Cloud)
 
 The app is deployed at:
 
-👉 Add your deployment URL here
+🔗 [https://sms-classifier-c7xhpszpnh23a8xf53drxz.streamlit.app/](https://sms-classifier-c7xhpszpnh23a8xf53drxz.streamlit.app/)
 
-To deploy yourself:
+### Deploy Your Own:
 
-Push code to GitHub
+1. Push project to GitHub
+2. Go to **Streamlit Cloud**
+3. Click **New App**
+4. Set:
 
-Go to Streamlit Cloud → New app
+   * Repository: `sms-classifier`
+   * Main file: `app/app.py`
+5. Deploy 🎉
 
-Set:
+---
 
-Repository: sms-classifier
+## 🧪 Sample Test Messages
 
-Main file: app/app.py
+### 📩 Spam
 
-Deploy 🎉
+> Congratulations! You have won a free iPhone. Click the link to claim your prize now.
 
-🧪 Testing Examples
-Spam
-Congratulations! You have won a free iPhone. Click the link to claim your prize now.
+### 📩 Ham
 
-Ham
-Hey, are we still meeting at 7pm today?
+> Hey, are we still meeting at 7pm today?
 
-Borderline
-Your subscription is expiring soon. Renew to avoid interruption.
+### 📩 Borderline
 
-📊 Evaluation
+> Your subscription is expiring soon. Renew to avoid interruption.
 
-Each model generates performance metrics like:
+---
 
-Accuracy
+## 📊 Model Evaluation
 
-Precision
+Each model generates:
 
-Recall
+* Accuracy
+* Precision
+* Recall
+* F1-Score
 
-F1 Score
+Saved to:
 
-Saved in:
-
+```
 models/nltk_metrics.json
 models/pipeline_metrics.json
+```
 
-📝 Logging
+---
 
-Logs are stored in:
+## 📝 Logging
 
+All logs are stored in:
+
+```
 logs/
-    predictions.log
-    train_nltk_model.log
-    train_pipeline_model.log
+ ├── predictions.log
+ ├── train_nltk_model.log
+ ├── train_pipeline_model.log
+ └── app.log
+```
 
+Each prediction logs:
 
-Every prediction is logged with:
+* Model backend
+* Predicted label
+* Confidence score
+* Text sample
 
-backend used
+---
 
-predicted label
+## 🧩 Technologies Used
 
-confidence score
+* Python
+* NLTK
+* Scikit-Learn
+* Pandas
+* Streamlit
+* Joblib / Pickle
+* Logging module
+* JSON metrics
 
-input text sample
+---
 
-🧩 Technologies Used
+## 🏆 Acknowledgements
 
-Python
-
-NLTK
-
-Scikit-Learn
-
-Pandas
-
-Streamlit
-
-Joblib / Pickle
-
-Logging module
-
-JSON metrics
-
-🏆 Acknowledgements
-
-Dataset:
+**Dataset:**
 SMS Spam Collection Dataset
-https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection
+[https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection)
 
-👨‍💻 Author
-Rohit Parihar
-UMass Dartmouth — MS in Data Science
+---
+
+## 👨‍💻 Author
+
+**Rohit Parihar**
+MS in Data Science — **UMass Dartmouth**
+
+---
+
