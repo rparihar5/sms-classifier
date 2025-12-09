@@ -15,38 +15,39 @@ It includes:
 
 ## Project Structure
 
+```text
 sms-classifier/
 │
-├── app/                    → Streamlit app
-│   └── app.py
+├── app/                          # Streamlit web application (UI)
+│   └── app.py                    # Main app entrypoint
 │
-├── data/
-│   └── spam.csv            → original dataset
+├── data/                         # Datasets
+│   └── spam.csv                  # Original SMS Spam Collection dataset
 │
-├── logs/                   → all logs saved here
-│   ├── predictions.log
-│   ├── train_nltk_model.log
-│   ├── train_pipeline_model.log
-│   └── app.log (optional)
+├── logs/                         # Application & model logs
+│   ├── predictions.log           # Logs every prediction made in the app
+│   ├── train_nltk_model.log      # Logs for NLTK model training
+│   ├── train_pipeline_model.log  # Logs for Pipeline model training
+│   └── app.log                   # App-level logging (optional)
 │
-├── models/                 → saved models and metrics
-│   ├── model.pkl           → NLTK Naive Bayes
-│   ├── vectorizer.pkl      → NLTK TF-IDF vectorizer
-│   ├── sms_model.joblib    → Pipeline model
-│   ├── nltk_metrics.json
-│   └── pipeline_metrics.json
+├── models/                       # Saved trained ML models + metrics
+│   ├── model.pkl                 # NLTK Naive Bayes classifier
+│   ├── vectorizer.pkl            # Vectorizer for NLTK model
+│   ├── sms_model.joblib          # Logistic Regression Pipeline model
+│   ├── nltk_metrics.json         # Evaluation metrics for NLTK model
+│   └── pipeline_metrics.json     # Evaluation metrics for Pipeline model
 │
-├── src/
-│   ├── config.py           → all paths, hyperparameters
-│   ├── preprocess.py       → transform_text()
-│   ├── predict.py          → predictions + confidence + logging
-│   ├── train_nltk_model.py → training script #1
-│   ├── train_pipeline_model.py → training script #2
+├── src/                          # Core source code (modular architecture)
+│   ├── config.py                 # Global configuration & file paths
+│   ├── preprocess.py             # Text preprocessing (tokenization, stemming)
+│   ├── predict.py                # Prediction logic + confidence scoring + logging
+│   ├── train_nltk_model.py       # Training script: NLTK + Naive Bayes
+│   ├── train_pipeline_model.py   # Training script: TF-IDF Pipeline + Logistic Regression
 │   ├── utils/
-│   │    └── logger.py      → custom file-only logger
+│   │    └── logger.py            # Custom logger (file-only logging)
 │   └── models/
-│        └── evaluate.py    → evaluate + save metrics JSON
+│        └── evaluate.py          # Model evaluation metrics generator
 │
-├── venv/
-└── requirements.txt
-
+├── venv/                         # (Optional) Python virtual environment
+│
+└── requirements.txt              # Project dependencies
