@@ -257,6 +257,5 @@ SMS Spam Collection Dataset
 https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection
 
 👨‍💻 Author
-
 Rohit Parihar
 UMass Dartmouth — MS in Data Science
