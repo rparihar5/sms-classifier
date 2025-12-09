@@ -1,4 +1,3 @@
-Here is a **clean, professional, well-organized `README.md`** suitable for **GitHub, recruiters, and production-level projects**. You can **copy-paste this directly** into your `README.md`.
 
 ---
 
@@ -12,7 +11,7 @@ Built with **Python, Scikit-Learn, NLTK, Streamlit**, and deployed on **Streamli
 ## 🚀 Live Demo
 
 🔗 **App URL:**
-👉 [https://sms-classifier-c7xhpszpnh23a8xf53drxz.streamlit.app/](https://sms-classifier-c7xhpszpnh23a8xf53drxz.streamlit.app/)
+👉 [Spam Classifier](https://sms-classifier-c7xhpszpnh23a8xf53drxz.streamlit.app/)
 
 Try real SMS examples and **switch between two ML backends** in real time.
 
@@ -209,18 +208,7 @@ http://localhost:8501
 
 The app is deployed at:
 
-🔗 [https://sms-classifier-c7xhpszpnh23a8xf53drxz.streamlit.app/](https://sms-classifier-c7xhpszpnh23a8xf53drxz.streamlit.app/)
-
-### Deploy Your Own:
-
-1. Push project to GitHub
-2. Go to **Streamlit Cloud**
-3. Click **New App**
-4. Set:
-
-   * Repository: `sms-classifier`
-   * Main file: `app/app.py`
-5. Deploy 🎉
+🔗 [Spam Classifier](https://sms-classifier-c7xhpszpnh23a8xf53drxz.streamlit.app/)
 
 ---
 
@@ -303,7 +291,7 @@ SMS Spam Collection Dataset
 ## 👨‍💻 Author
 
 **Rohit Parihar**
-MS in Data Science — **UMass Dartmouth**
+MS in Data Science — **University of Massachusetts Dartmouth**
 
 ---
 
