@@ -37,7 +37,7 @@ def load_metrics(backend_key: str):
 
 st.set_page_config(page_title="SMS Spam Classifier", page_icon="📩")
 
-st.title("📩 SMS / Email Spam Classifier")
+st.title("SMS / Email Spam Classifier")
 
 backend = st.radio(
     "Choose model backend:",
@@ -45,16 +45,6 @@ backend = st.radio(
 )
 
 backend_key = "pipeline" if "Pipeline" in backend else "nltk"
-
-# ----------------------- SHOW METRICS -----------------------
-
-metrics = load_metrics(backend_key)
-
-if metrics:
-    with st.expander("📊 Show model performance on test data"):
-        st.write(f"**Accuracy:** {metrics['accuracy']:.4f}")
-        st.write(f"**Precision:** {metrics['precision']:.4f}")
-        st.write(f"**Recall:** {metrics['recall']:.4f}")
 
 # ----------------------- SPAM PREDICTION -----------------------
 

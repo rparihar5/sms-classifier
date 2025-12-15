@@ -28,3 +28,33 @@ weighted avg       0.97      0.97      0.96      1115
 [2025-11-23 18:36:53] train_nltk_model - INFO - Saved:
 - /Users/rohitparihar/Documents/School/My Subjects/masters_project/campusX/sms-classifier/models/vectorizer.pkl
 - /Users/rohitparihar/Documents/School/My Subjects/masters_project/campusX/sms-classifier/models/model.pkl
+[2025-12-10 15:51:42] train_nltk_model - INFO - Ensuring NLTK resources...
+[2025-12-10 15:51:42] train_nltk_model - INFO - Loading data from: /Users/rohitparihar/Documents/School/My Subjects/masters_project/campusX/sms-classifier/data/spam.csv
+[2025-12-10 15:51:42] train_nltk_model - INFO - Transforming text...
+[2025-12-10 15:51:45] train_nltk_model - INFO - Vectorizing TF-IDF...
+[2025-12-10 15:51:45] train_nltk_model - INFO - Splitting into train/test...
+[2025-12-10 15:51:45] train_nltk_model - INFO - Training Multinomial Naive Bayes...
+[2025-12-10 15:51:45] train_nltk_model - INFO - Evaluating model...
+[2025-12-10 15:51:45] train_nltk_model - INFO - === Evaluation for backend: nltk ===
+[2025-12-10 15:51:45] train_nltk_model - INFO - Accuracy: 0.9650224215246637
+[2025-12-10 15:51:45] train_nltk_model - INFO - Precision: 0.9917355371900827
+[2025-12-10 15:51:45] train_nltk_model - INFO - Recall: 0.759493670886076
+[2025-12-10 15:51:45] train_nltk_model - INFO - F1-score: 0.8602150537634409
+[2025-12-10 15:51:45] train_nltk_model - INFO - Confusion matrix:
+[[956   1]
+ [ 38 120]]
+[2025-12-10 15:51:45] train_nltk_model - INFO - Classification report:
+              precision    recall  f1-score   support
+
+           0       0.96      1.00      0.98       957
+           1       0.99      0.76      0.86       158
+
+    accuracy                           0.97      1115
+   macro avg       0.98      0.88      0.92      1115
+weighted avg       0.97      0.97      0.96      1115
+
+[2025-12-10 15:51:45] train_nltk_model - INFO - Metrics saved to /Users/rohitparihar/Documents/School/My Subjects/masters_project/campusX/sms-classifier/models/nltk_metrics.json
+[2025-12-10 15:51:45] train_nltk_model - INFO - Saving vectorizer and model...
+[2025-12-10 15:51:45] train_nltk_model - INFO - Saved:
+- /Users/rohitparihar/Documents/School/My Subjects/masters_project/campusX/sms-classifier/models/vectorizer.pkl
+- /Users/rohitparihar/Documents/School/My Subjects/masters_project/campusX/sms-classifier/models/model.pkl

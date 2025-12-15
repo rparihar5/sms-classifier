@@ -46,3 +46,47 @@ weighted avg       0.97      0.97      0.97      1115
 [2025-11-23 18:38:03] train_pipeline_model - INFO - Metrics saved to /Users/rohitparihar/Documents/School/My Subjects/masters_project/campusX/sms-classifier/models/pipeline_metrics.json
 [2025-11-23 18:38:03] train_pipeline_model - INFO - Saving trained pipeline model...
 [2025-11-23 18:38:03] train_pipeline_model - INFO - Model saved to /Users/rohitparihar/Documents/School/My Subjects/masters_project/campusX/sms-classifier/models/sms_model.joblib
+[2025-12-10 15:18:29] train_pipeline_model - INFO - Loading data...
+[2025-12-10 15:18:29] train_pipeline_model - INFO - Training pipeline model (TF-IDF + Logistic Regression)...
+[2025-12-10 15:18:30] train_pipeline_model - INFO - Evaluating on test set...
+[2025-12-10 15:18:30] train_pipeline_model - INFO - === Evaluation for backend: pipeline ===
+[2025-12-10 15:18:30] train_pipeline_model - INFO - Accuracy: 0.968609865470852
+[2025-12-10 15:18:30] train_pipeline_model - INFO - Precision: 0.9830508474576272
+[2025-12-10 15:18:30] train_pipeline_model - INFO - Recall: 0.7785234899328859
+[2025-12-10 15:18:30] train_pipeline_model - INFO - F1-score: 0.8689138576779026
+[2025-12-10 15:18:30] train_pipeline_model - INFO - Confusion matrix:
+[[964   2]
+ [ 33 116]]
+[2025-12-10 15:18:30] train_pipeline_model - INFO - Classification report:
+              precision    recall  f1-score   support
+
+         ham       0.97      1.00      0.98       966
+        spam       0.98      0.78      0.87       149
+
+    accuracy                           0.97      1115
+   macro avg       0.97      0.89      0.93      1115
+weighted avg       0.97      0.97      0.97      1115
+
+[2025-12-10 15:18:30] train_pipeline_model - INFO - Metrics saved to /Users/rohitparihar/Documents/School/My Subjects/masters_project/campusX/sms-classifier/models/pipeline_metrics.json
+[2025-12-10 15:18:30] train_pipeline_model - INFO - Saving trained pipeline model...
+[2025-12-10 15:18:30] train_pipeline_model - INFO - Model saved to /Users/rohitparihar/Documents/School/My Subjects/masters_project/campusX/sms-classifier/models/sms_model.joblib
+[2025-12-10 15:19:07] train_pipeline_model - INFO - Loading data...
+[2025-12-10 15:19:07] train_pipeline_model - INFO - Training pipeline model (TF-IDF + Logistic Regression)...
+[2025-12-10 15:19:07] train_pipeline_model - INFO - Evaluating on test set...
+[2025-12-10 15:19:07] train_pipeline_model - INFO - === Evaluation for backend: pipeline ===
+[2025-12-10 15:19:07] train_pipeline_model - INFO - Accuracy: 0.968609865470852
+[2025-12-10 15:19:07] train_pipeline_model - INFO - Precision: 0.9830508474576272
+[2025-12-10 15:19:07] train_pipeline_model - INFO - Recall: 0.7785234899328859
+[2025-12-10 15:19:07] train_pipeline_model - INFO - F1-score: 0.8689138576779026
+[2025-12-10 15:19:07] train_pipeline_model - INFO - Confusion matrix:
+[[964   2]
+ [ 33 116]]
+[2025-12-10 15:19:07] train_pipeline_model - INFO - Classification report:
+              precision    recall  f1-score   support
+
+         ham       0.97      1.00      0.98       966
+        spam       0.98      0.78      0.87       149
+
+    accuracy                           0.97      1115
+   macro avg       0.97      0.89      0.93      1115
+weighted avg       0.97      0.97      0.97      1115
