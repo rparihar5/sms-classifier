@@ -41,7 +41,7 @@ st.title("SMS / Email Spam Classifier")
 
 backend = st.radio(
     "Choose model backend:",
-    ["Pipeline (TF-IDF + Logistic Regression)", "NLTK (Preprocessing + Naive Bayes)"],
+    ["Logistic Regression", "NLTK (Preprocessing + Naive Bayes)"],
 )
 
 backend_key = "pipeline" if "Pipeline" in backend else "nltk"
